@@ -1,0 +1,78 @@
+body{
+	font-family: helvetica;
+	color: rgb(51 51 51);
+	}
+
+#header {
+	display: flex;
+	flex-direction: column;
+}
+
+#logo {
+	background-color: rgb(240 150 66);
+	display: flex;
+	justify-content: center;
+}
+
+#logo img {
+	height: 90px;
+}
+
+nav{
+	padding: 1px 0px 1px;
+	background-color: rgb(255 255 255);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+nav article {
+	padding: 15px;
+	background-color: rgb(23 117 81);
+	text-align: center;
+	font-family: helvetica;
+	color:white;
+}
+
+nav a {
+	color:white;
+	text-decoration-line: none;	
+}
+
+nav article:hover {
+	background-color:white;
+	color: rgb(23 117 81);
+}
+
+#navNow {
+	color:rgb(240 150 66);
+
+/* navNow er en id jeg har brukt for å vise hvilken side man er på i navigeringen */
+
+}
+
+footer {
+	background-color: rgb(240 150 66);
+	display: grid;
+	grid-template-columns: repeat(4, 60px);
+	grid-column-gap: 10px;
+	grid-template-rows: 60px
+}
+
+.linkedImages {
+	width: 100%;
+	height: 100%;
+}
+
+#mail {
+	padding: 18%;
+ 	width: 68%;
+ 	height: 68%;
+}
+
+@media (max-width: 600px) {
+	nav {
+		grid-template-columns: 1fr;
+	}
+}
+
+
