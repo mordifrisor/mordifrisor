@@ -1,0 +1,107 @@
+.linkedSitesContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+	padding: 20px 60px 20px 60px;
+
+}
+
+.linkedSitesContainer article {
+	padding: 13px;
+	text-align: center;
+}
+
+.linkedSitesContainer a {
+	color: white;
+	text-decoration-line: none;
+	background-color: rgb(240 150 66);
+}
+
+.linkedSitesContainer a:hover {
+	background-color: white;
+	color:	rgb(23 117 81);
+}
+
+#headline1 {
+	font-weight: bold;
+	font-size: 20px;
+	color: rgb(23 117 81);
+	text-align: center;
+}
+
+.listContainer {
+	padding: 15px 0px 15px 0px;
+}
+
+.list{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 30px;
+	padding: 0px 300px 0px 300px;
+}
+
+li {
+	color: rgb(51 51 51);
+	font-weight: normal;
+	font-size: 16px;
+	}
+
+#loginSite {
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 2px;
+	display: none;
+	justify-content: space-around;
+	align-items: center;
+	width: 500px;
+	height: 200px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-left: -250px;
+	margin-top: -65px;
+	background-color: white;
+}
+
+.loginDiv {
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	color: rgb(23 117 81);
+	grid-row-gap: 8px;
+}
+
+.userButton {
+	padding: 2px 84px;
+	background-color: rgb(240 150 66);
+	color: white;
+	text-align: center;
+	border-radius: 1px;
+}
+
+.userButton:hover {
+	background-color: white;
+	color: rgb(23 117 81);
+}
+
+.userInput {
+	text-align: center;
+	/*height: 20px;*/
+	font-size: 15px;
+}
+
+
+
+
+@media (max-width: 900px) {
+
+.list {
+	grid-template-columns: 1fr 1fr;
+	padding: 0px 20px;
+	grid-column-gap: 30px;
+}
+
+
+
+
+}

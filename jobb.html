@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mordi Frisør</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="jobb.css">
+</head>
+<body>
+	<div id="header">
+			<div id="logo">
+				<img src="images/logo.png" alt="eget bilde">
+			</div>
+			<nav>
+				<a href="hovedSide.html">
+					<article>Hjem</article>
+				</a>
+				<a href="time.html">
+					<article>Bestill time</article>
+				</a>
+				<a href="omOss.html">
+					<article>Om oss</article>
+				</a>
+				<a href="jobb.html">
+					<article  id="navNow">Få jobb</article>
+				</a>	
+			</nav>
+		<div>
+		<div class="linkedSitesContainer" >
+			<a  onclick=" loginSite.style.display = 'flex'">
+				<article>Annsatt side</article>
+			</a>
+			<a href="https://www.facebook.com/Mordi-Frisør-103270297848623/?modal=admin_todo_tour" target="_blank">
+				<article>Ledige stillinger</article>
+			</a>
+		</div>
+		<div class="listContainer">
+			<article id="headline1">
+				Hvorfor jobbe hos Mordi frisør
+			<article>
+			<article>
+				<ul class="list">
+					<li>
+						<b> Du får betalt.</b>
+							Frisørjobber på dagtid vil betalingen overføres digitalt, andre jobber på kvelden vil bli betalt i cash. Vi har altså god variasjon på jobb :)
+					</li>
+					<li>
+						<b> Grundig opplæring/oppfølging.</b>
+							Med våre utrolig flinke mentorer får du en grundig opplæring. Her vil du lære relevante frisørtekniker og hvis du er heldig kanskje også litt kemi. Hos oss blir du en lojal ansatt med streng oppfølging. 
+					</li>
+					<li>
+						<b> Gode og sunne arbeidsforhold. </b>
+							Frisørsalongene våre skal alltid holdes rene. Og pauserommet er alltid utstyrt med gassmasker. Vi har klare og enkle regler på hva som skal og skal ikke røres.
+					</li>
+					<li>
+						<b> Fleksible arbeidstider. </b>
+							Vi har vakter du kan ta både på dagen og på kvelden med varierte arbeidsoppgaver. Her er det også varierende betaling så er det bare å plukke de vaktene som passer deg best, både for lommeboka og samvittigheten sin skyld. 
+					</li>
+				</ul>
+			</article>
+		</div>
+		<footer>
+			<article>
+				<a href="mailto:mordifrisor@gmail.com" target="_blank">
+					<img src="images/f4.png" id="mail" alt="eget bilde">
+				</a>
+			</article>
+			<article>
+				<a href="https://www.facebook.com/Mordi-Frisør-103270297848623/?modal=admin_todo_tour" target="_blank">
+					<img src="images/f7.png" class="linketImages" alt="eget bilde">
+				</a>
+			</article>
+			<article>
+				<a href="https://www.instagram.com/moordifrisor/" target="_blank">
+					<img src="images/f5.png" class="linketImages" alt="eget bilde">
+				</a>
+			</article>
+		</footer>
+
+
+		<div id="loginSite">
+			<div class="loginDiv">
+				<article>Logg inn</article>
+				<input type="text" placeholder="brukernavn" id="username"	class="userInput"	required="">
+				<input type="password" placeholder="passord" id="password"	class="userInput"	required="">
+				<input type="submit" class="userButton" value="Logg inn" onclick="passwordTest();">
+			</div>
+			<div class="loginDiv">
+				<article>Registrer deg!</article>
+				<form onsubmit="regNewUser();"	class="loginDiv">
+					<input type=""	placeholder="brukernavn" id="regNewUsername"	class="userInput"	required="">
+					<input type=""	placeholder="passord"	 id="regNewPassword"	class="userInput"	required="">
+					<!-- <button class="userBotton">Registrer</button> -->
+					<input type="submit" class="userButton" value="Registrer">
+				</form>
+			</div>
+		</div>
+
+
+		<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+		<script src="mordiFrisor.js"></script>
+	</body>
+	
+</html>
