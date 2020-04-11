@@ -19,17 +19,31 @@ th {
 	padding: 0px 0px 5px
 }
 
+table {
+	padding: 0px 0px 0px 30px;
+	border-collapse: collapse;
+}
 
 #inputHolder {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 40px 0px
+	padding: 40px 0px;
 }
 
 #input {
 	width: 150px;
 	height: 30px;
 	font-size: 16px;
+}
+
+.delete {
+	width: 20px;
+	display: none; 
+}
+
+
+.closeTd {
+	width: 40px;
 }
 
